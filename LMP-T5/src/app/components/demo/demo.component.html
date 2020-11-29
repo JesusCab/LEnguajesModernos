@@ -1,0 +1,52 @@
+<header [translucent]="true">
+    <toolbar>
+      <ion-title>
+          <p style="color:navy;">
+        <B>Lenguajes Modernos De Programacion </B> <br>Tarea#5 Jesus Caballero 
+          </p>
+      </ion-title>
+    </toolbar>
+  </header>
+
+  <ion-content>
+
+                <div class="card">
+                    <div class="card-header">
+                        <B>
+                        Ingrese Sus Datos:
+                        </B>
+                    </div>
+                    <br>
+                    <div class="card-content">
+                           <label for="Nombre"> Nombre:</label> 
+                            <input  type="text" id="Nombre" name="nombre" [(ngModel)]="nombre" >
+                        <br><br>
+                            <label for="Edad"> Edad:</label>
+                            <input  type="number" id="Edad" name="edad" [(ngModel)]="edad" >
+                        <br><br>
+                            <label >Correo:</label>
+                            <input  type="email" id="Correo" name="correo" [(ngModel)]="correo" >
+                        
+                        <br><br>
+
+                      <button size="large" (click)="agregar()">Agregar Registro</button>
+                      <button size="large" (click)="leer()">Leer Registro</button>
+                      <button size="large" (click)="eliminar()">Eliminar registro</button>
+
+                      <br><br>
+                      <form action="http://google.com">
+                        <input type="submit" value="Google" />
+                      </form>
+                      <form action="http://www.fcfm.uanl.mx/">
+                        <input type="submit" value="FCFM" />
+                      </form>
+                      <form action="http://www.uanl.mx/">
+                        <input type="submit" value="UANL" />
+                      </form>
+                    </div>
+                </div>
+
+
+
+
+  </ion-content>
