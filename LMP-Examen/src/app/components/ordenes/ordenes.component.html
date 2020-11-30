@@ -1,0 +1,33 @@
+<h1>
+    <p style="color:salmon">
+    <label><B>Cafeteria Express</B></label>
+    </p>
+</h1>
+<h2>
+    <button size="large"(click)="navmenu()">Menu</button>
+    <button size="large"(click)="navordenes()">Ordenes</button>
+</h2>
+<content>
+<div class="card">
+<div class="card-header">
+<label><B>Nueva Orden</B></label>
+</div>
+<div class="card-content">
+<label for="Platillo">Platillo</label>
+<input type="text" id=Platillo name="platillo"[(ngModel)]="platillo">
+ <br><br>
+ <label for="Bebida">Bebida</label>
+ <input type="text" id=Bebida name="bebida"[(ngModel)]="bebida">
+ <br><br>
+<label for="Mesa">NumeroDeMesa:</label>
+<input type="number" id=Mesa name="mesa"[(ngModel)]="mesa">
+<br><br>
+<button (click)="agregar()">Agregar</button>
+<button (click)="ordenes()">ordenes pendientes</button>
+<br><br><br>
+<button (click)="eliminar()">EntregarOrden</button>
+
+</div>
+</div>
+
+</content>

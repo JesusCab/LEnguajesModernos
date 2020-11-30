@@ -1,0 +1,30 @@
+<h1>
+    <p style="color:salmon">
+    <label>Cafeteria Express</label>
+    </p>
+    </h1>
+    <br>
+<content>
+    <div class="card">
+        <div class="card-header">
+            <B>
+                Iniciar Sesion(login):
+            </B>
+        </div>
+        <br>
+        <div class="card-content">
+            <label for="Usuario">Usuario:</label>
+            <input type="text" id="Usuario" name="usuario" [(ngModel)]="usuario">
+            <br><br>
+            <label for="Contrasena">Contraseña:</label>
+            <input type="password" id="Contrasena" name="contrasena" [(ngModel)]="contrasena">
+            <br><br>
+
+            <button size="large" (click)="login()">Entrar</button>
+        </div>
+
+    </div>
+
+
+
+</content>
